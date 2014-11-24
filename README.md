@@ -26,3 +26,7 @@ Move it:
 Click on a couple of others who spend a lot on construction:
 
 <img src="https://github.com/DanOlner/IO-matrix-viz/blob/gh-pages/images/MonNov2418_19_24GMT2014_KeyPrint_IOMatrix-2855.jpeg" width="400"/>
+
+Add the money amounts (millions):
+
+<img src="https://github.com/DanOlner/IO-matrix-viz/blob/gh-pages/images/MonNov2418_37_16GMT2014_KeyPrint_IOMatrix-3117.jpeg" width="400"/>
