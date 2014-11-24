@@ -3,7 +3,9 @@ IO-matrix-viz
 
 Interactive force-directed graph visualisation of an input-output matrix (From the [intermediate 'combined use' matrix 2012]( http://www.ons.gov.uk/ons/publications/re-reference-tables.html?edition=tcm%3A77-379304)). 
 
-Download/unzip dist.zip, read the readme for instructions. Example use. On opening, force-based layout looks like:
+Download/unzip dist.zip, double-click the jar, read the readme for instructions. 
+
+Example use: on opening, force-based layout looks like:
 
 <img src="http://danolner.github.io/IO-matrix-viz/images/MonNov2418_18_34GMT2014_KeyPrint_IOMatrix-0173.jpeg" width="400"/>
 
