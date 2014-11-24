@@ -725,45 +725,13 @@ public class Main extends PApplet {
         //set up size of vertex detector
         vertexDetectors = new Ellipse2D.Double[vertices.size()];
 
-//        Vertex remove = new Vertex(this, " ", " ");
-
         for (int i = 0; i < vertexDetectors.length; i++) {
-
-//            System.out.println(vertices.get(i).name);
-
-//            if (vertices.get(i).name.equals("Imputed rent services")) {
-//                remove = vertices.get(i);
-//            }
-//
-//            //remove imputed rent from total intermediate demand
-//            if (vertices.get(i).name.equals("Financial services, except insurance and pension funding")) {
-//                vertices.get(i).demand -= 37870;
-//            }
 
             vertexDetectors[i] = new Ellipse2D.Double();
         }
 
-        //remove imputed rent
-//        g.removeVertex(remove);
-
-//        BetweennessCentrality ranker = new BetweennessCentrality(g);
-//        ranker.setRemoveRankScoresOnFinalize(false);
-//        ranker.evaluate();
-        //ranker.printRankings(true, true);
-
-//        for(Vertex v: vertices) {            
-//            System.out.println(v.name + "#" + ranker.getVertexRankScore(v));            
-//        }
-
-
         //find max Edge val
         for (Edge e : g.getEdges()) {
-
-            //decrease total intermediate val for finance too. 
-//            if (e.from.name.equals("Financial services, except insurance and pension funding")
-//                    && e.to.name.equals("Imputed rent services")) {
-//                System.out.println("found");
-//            }
 
             maxEdgeVal = (e.val > maxEdgeVal ? e.val : maxEdgeVal);
             maxLogEdgeVal = (Math.log10((double) e.val) > maxLogEdgeVal ? (float) Math.log10((double) e.val) : maxLogEdgeVal);
@@ -797,18 +765,11 @@ public class Main extends PApplet {
                 //I wish I'd written a comment explaining this!
                 e.setAttraction(physics.makeAttraction(pair.getFirst().p, pair.getSecond().p,
                         (((float) Math.log10(pair.getSecond().demand)) - 2) * particleStrengthMult, particleMinDist));
-//                e.setAttraction(physics.makeAttraction(pair.getFirst().p, pair.getSecond().p,
-//                        (((float) Math.log10(pair.getFirst().demand)) - 2) * particleStrengthMult, particleMinDist));
-
                 //            System.out.println("Raw demand = " + pair.getFirst().demand + ", log demand: " + ((float) Math.log10(pair.getFirst().demand)-3));
 
                 count++;
 
             }//end pair check
-//            else {
-//                System.out.println("me!");
-//            }
-
 
         }
 
@@ -817,40 +778,6 @@ public class Main extends PApplet {
 
         //stick em in circle for now...
         putInACircle(vertices, width / 20);
-//        putAtCentre();
-
-        //test internal edge refs
-//        for (Vertex v : vertices) {
-//            System.out.println("internal link refs from: " + v.moneyFromMe.size());
-//            System.out.println("internal link refs to: " + v.moneyToMe.size());
-//
-//            System.out.println("Testing that I'm the from: "
-//                    + v.moneyFromMe.get(0).from.name + ", " + v.name);
-//
-//            try {
-//                System.out.println("Testing that I'm the to: "
-//                        + v.moneyToMe.get(0).to.name + ", " + v.name);
-//            } catch (Exception e) {
-//                System.out.println("No 'to' values for: " + v.name);
-//            }
-//
-//            boolean selfLoop = false;
-//            for (Edge e : v.moneyFromMe) {
-//
-//                if (e.from.name.equals(v.name)) {
-//                    selfLoop = true;
-//                }
-//
-//            }//end for edge
-//
-//            if (selfLoop) {
-//                System.out.println("Self loop");
-//            } else {
-//                System.out.println("No self loop");
-//            }
-//
-//        }//end for vertex
-
 
     }
 

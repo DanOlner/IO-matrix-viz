@@ -51,6 +51,7 @@ public class DataReader {
     public void read() throws IOException {
 
         String fileName = "data/2012_combinedUseMinusImputedRent.csv";
+//        String fileName = "data/2010_domesticUseProductbyProduct_minusImputedRent.csv";
 
         int ID = 0;
 
@@ -86,7 +87,7 @@ public class DataReader {
 
                 //first node source, second destination
                 //don't create zero-value drawEdges...
-                if (Integer.parseInt(nextLine[1 + i]) != 0) {
+                if ((int) Float.parseFloat(nextLine[1 + i]) != 0) {
 
                     //keep a local record of what vertices this connects. Jung is probably slower to retreive this info.
                     //check correct values being loaded onto edge
@@ -94,7 +95,7 @@ public class DataReader {
                     from = Main.vertices.get(i);
                     to = Main.vertices.get(index);
 
-                    edge = new Edge(p, Integer.parseInt(nextLine[1 + i]),
+                    edge = new Edge(p, (int) Float.parseFloat(nextLine[1 + i]),
                             from, to);
 
                     //while we're here, add to each sector's record of 
@@ -120,33 +121,33 @@ public class DataReader {
         reader = new CSVReader(new FileReader(fileName));
 
         //array for summing total consumption per sector
-        int[] totalConsumption = new int[Main.vertices.size()];
+        float[] totalConsumption = new float[Main.vertices.size()];
 
         index = 0;
 
         //Each line is a row we want to sum. In IO table, that's each sector's demand
         while ((nextLine = reader.readNext()) != null) {
 
-            int totalDemand = 0;
+            float totalDemand = 0;
 
             for (int i = 0; i < Main.vertices.size(); i++) {
 
                 //sum demand across the row
-                totalDemand += Integer.parseInt(nextLine[1 + i]);
+                totalDemand += Float.parseFloat(nextLine[1 + i]);
 
                 //keep a running record of total consumption for each column
-                totalConsumption[i] += Integer.parseInt(nextLine[1 + i]);
+                totalConsumption[i] += Float.parseFloat(nextLine[1 + i]);
 
             }
 
             //Store demand after each row sum
-            Main.vertices.get(index++).demand = totalDemand;
+            Main.vertices.get(index++).demand = (int) totalDemand;
 
         }//end while nextLines loop
 
         //Now drop summed consumption amounts into the sectors
         for (int i = 0; i < Main.vertices.size(); i++) {
-            Main.vertices.get(i).consumption = totalConsumption[i];
+            Main.vertices.get(i).consumption = (int) totalConsumption[i];
         }
 
         //Check consumption/demand numbers
