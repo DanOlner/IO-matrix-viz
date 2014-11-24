@@ -50,7 +50,7 @@ public class DataReader {
 
     public void read() throws IOException {
 
-        String fileName = "data/GenericFormat_supplyAndUse2011_minusImputedRent.csv";
+        String fileName = "data/2012_combinedUseMinusImputedRent.csv";
 
         int ID = 0;
 

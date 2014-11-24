@@ -13,8 +13,14 @@ nbproject/
 #ignore anything in a lib directory
 lib/
 
-#ignore keyprints folder
+#ignore keyprints folder (though it's in the zip)
 keyPrints/
+
+#ignore xls files in the data folder
+data/*.xls
+data/*.xlsx
+
+distbits_toavoidoveride/
 
 #ignore manifest files
 *.mf
