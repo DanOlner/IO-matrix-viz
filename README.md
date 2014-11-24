@@ -1,7 +1,7 @@
 IO-matrix-viz
 =============
 
-Interactive force-directed graph visualisation of an input-output matrix (From [intermediate 'combined use' matrix 2012]( http://www.ons.gov.uk/ons/publications/re-reference-tables.html?edition=tcm%3A77-379304)). 
+Interactive force-directed graph visualisation of an input-output matrix (From the [intermediate 'combined use' matrix 2012]( http://www.ons.gov.uk/ons/publications/re-reference-tables.html?edition=tcm%3A77-379304)). 
 
 Download/unzip dist.zip, read the readme for instructions. Example use. On opening, force-based layout looks like:
 
