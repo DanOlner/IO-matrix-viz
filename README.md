@@ -19,6 +19,10 @@ Click on construction - keep the top 5% of incoming/outgoing flows:
 
 <img src="https://github.com/DanOlner/IO-matrix-viz/blob/gh-pages/images/MonNov2418_18_52GMT2014_KeyPrint_IOMatrix-0953.jpeg" width="400"/>
 
+Move it:
+
 <img src="https://github.com/DanOlner/IO-matrix-viz/blob/gh-pages/images/MonNov2418_18_55GMT2014_KeyPrint_IOMatrix-1146.jpeg" width="400"/>
+
+Click on a couple of others who spend a lot on construction:
 
 <img src="https://github.com/DanOlner/IO-matrix-viz/blob/gh-pages/images/MonNov2418_19_24GMT2014_KeyPrint_IOMatrix-2855.jpeg" width="400"/>
