@@ -1,7 +1,7 @@
 IO-matrix-viz
 =============
 
-Interactive force-directed graph visualisation of an input-output matrix (From the [intermediate 'combined use' matrix 2012]( http://www.ons.gov.uk/ons/publications/re-reference-tables.html?edition=tcm%3A77-379304)). 
+Interactive force-directed graph visualisation of an input-output matrix (From the UK ['combined use' matrix 2012]( http://www.ons.gov.uk/ons/publications/re-reference-tables.html?edition=tcm%3A77-379304)). 
 
 Download/unzip dist.zip, double-click the jar, read the readme for instructions. 
 
@@ -17,7 +17,7 @@ Hover over the biggest single sector, construction:
 
 <img src="https://github.com/DanOlner/IO-matrix-viz/blob/gh-pages/images/MonNov2418_18_45GMT2014_KeyPrint_IOMatrix-0537.jpeg" width="400"/>
 
-Click on construction - keep the top 5% of incoming/outgoing flows:
+Click on construction - keeps the top 5% of incoming/outgoing flows:
 
 <img src="https://github.com/DanOlner/IO-matrix-viz/blob/gh-pages/images/MonNov2418_18_52GMT2014_KeyPrint_IOMatrix-0953.jpeg" width="400"/>
 
