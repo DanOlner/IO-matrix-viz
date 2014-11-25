@@ -7,7 +7,7 @@ Interactive force-directed graph visualisation of an input-output matrix (From t
 
 Download/unzip dist.zip, double-click the jar, read the readme for instructions.
 
-Source code uses these libraries: core.jar from [processing.org](https://processing.org/download/?processing) // [Controlp5](http://www.sojamo.de/libraries/controlP5/) for the interface // [Jung 2 with included 3rd party libraries](http://jung.sourceforge.net/download.html) // [OpenCSV 2.2](http://sourceforge.net/projects/opencsv/files%2Fopencsv%2F2.2/). (Dist.zip's lib folder has all the required jars too.)
+Source code uses these libraries: core.jar from [processing.org](https://processing.org/download/?processing) // [Jeffrey Traer's physics library](http://murderandcreate.com/physics/)  // [Controlp5](http://www.sojamo.de/libraries/controlP5/) for the interface // [Jung 2 with included 3rd party libraries](http://jung.sourceforge.net/download.html) // [OpenCSV 2.2](http://sourceforge.net/projects/opencsv/files%2Fopencsv%2F2.2/). (Dist.zip's lib folder has all the required jars too.)
 
 If you want to drop in your own matrix, have a look at the CSV format in dist's data folder. There are no headers. First column lists the names of rows/columns (industrial sectors, in the case of the one supplied). Only matrix cell values are in the CSV: the program sums rows and columns to get, respectively, per-sector demand and consumption.
 
