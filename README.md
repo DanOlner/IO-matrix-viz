@@ -9,7 +9,7 @@ Source code uses these libraries: core.jar from [processing.org](https://process
 
 If you want to drop in your own matrix, have a look at the CSV format in dist's data folder. There are no headers. First column lists the names of rows/columns (industrial sectors, in the case of the one supplied). Only matrix cell values are in the CSV: the program sums rows and columns to get, respectively, per-sector demand and consumption.
 
-Example ([here's a video](https://www.youtube.com/watch?v=AB9l-4IXufY)  of the follow steps; annoyingly, you have to change to HD manually, google have stoppe). 
+Example... ([here's a video](https://vimeo.com/112848155)  of the following steps). 
 
 <img src="http://danolner.github.io/IO-matrix-viz/images/MonNov2418_18_34GMT2014_KeyPrint_IOMatrix-0173.jpeg" width="400"/>
 
