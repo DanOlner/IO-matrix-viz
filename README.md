@@ -3,7 +3,7 @@ IO-matrix-viz
 
 Interactive force-directed graph visualisation of an input-output matrix (From the UK ['combined use' matrix 2012]( http://www.ons.gov.uk/ons/publications/re-reference-tables.html?edition=tcm%3A77-379304)). 
 
-[Here's a video](https://vimeo.com/112848155) of the thing in action.
+[Here's a video](https://vimeo.com/112848155) of the thing in action (minus the user interface).
 
 Download/unzip dist.zip, double-click the jar, read the readme for instructions.
 
