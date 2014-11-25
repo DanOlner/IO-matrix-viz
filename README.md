@@ -1,7 +1,7 @@
 IO-matrix-viz
 =============
 
-Interactive force-directed graph visualisation of an input-output matrix (From the UK ['combined use' matrix 2012]( http://www.ons.gov.uk/ons/publications/re-reference-tables.html?edition=tcm%3A77-379304)). 
+Interactive force-directed graph visualisation of an input-output matrix (From the UK ['combined use' matrix 2012]( http://www.ons.gov.uk/ons/publications/re-reference-tables.html?edition=tcm%3A77-379304)). [here's a video](https://vimeo.com/112848155) of the thing in action.
 
 Download/unzip dist.zip, double-click the jar, read the readme for instructions.
 
@@ -9,7 +9,7 @@ Source code uses these libraries: core.jar from [processing.org](https://process
 
 If you want to drop in your own matrix, have a look at the CSV format in dist's data folder. There are no headers. First column lists the names of rows/columns (industrial sectors, in the case of the one supplied). Only matrix cell values are in the CSV: the program sums rows and columns to get, respectively, per-sector demand and consumption.
 
-Example... ([here's a video](https://vimeo.com/112848155)  of the following steps). 
+Example:
 
 <img src="http://danolner.github.io/IO-matrix-viz/images/MonNov2418_18_34GMT2014_KeyPrint_IOMatrix-0173.jpeg" width="400"/>
 
